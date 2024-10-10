@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="icon" type="image/png" href="assets/favicon.ico" />
+        <script src="js/main.js"></script>
+        <title>CosmicCatnap</title>
+    </head>
+    <body onload="loadMain('/html/about.html');">
+        <header>
+            <img name="profile" src="assets/icon.png" />
+            <button class="blue" onclick="loadMain('/html/about.html')">[ABOUT]</button>
+            <button class="red" onclick="loadMain('/html/articles.html')">[ARTICLES]</button>
+            <button class="green" onclick="loadMain('/html/projects.html')">[PROJECTS]</button>
+            <button class="purple" onclick="loadMain('/html/philosophy.html')">[PHILOSOPHY]</button>
+            <button class="orange" onclick="loadMain('/html/contact.html')">[CONTACT]</button>
+        </header>
+        <main>
+            <div id="main" class="fade"></div>
+        </main>
+        <footer>
+            CosmicCatnap ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            <a href="mailto:cosmiccatnap@gmail.com">cosmiccatnap@gmail.com</a>
+        </footer>
+    </body>
+</html>

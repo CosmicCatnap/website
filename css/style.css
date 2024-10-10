@@ -1,0 +1,132 @@
+/* gruvbox */
+:root {
+    --bg: #242424;
+    --fg: #f9f5d7;
+    --dark: #1d2021;
+    --light: #fbf1c7;
+    --gray: #a80084;
+    --red: #cc241d;
+    --green: #98971a;
+    --blue: #458588;
+    --purple: #b16286;
+    --aqua: #689d6a;
+    --orange: #d65d0e;
+    --yellow: #d79921;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+.blue {
+    color: var(--blue);
+}
+.red {
+    color: var(--red);
+}
+.yellow {
+    color: var(--yellow);
+}
+.green {
+    color: var(--green);
+}
+.purple {
+    color: var(--purple);
+}
+.orange {
+    color: var(--orange);
+}
+
+@media screen and (min-width: 80rem) {
+    main {
+        margin: 2em 8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 100%;
+    }
+}
+
+/* global properties go here */
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    object-fit: contain;
+    margin: 0;
+}
+
+body {
+    font-size: 1.5em;
+    background: var(--bg);
+    color: var(--fg);
+}
+
+main {
+    text-indent: 30px;
+    position: fixed;
+    top: 50px;
+}
+
+header {
+    padding: 10px;
+    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid var(--light);
+    img {
+        vertical-align: inherit;
+        width: 64px;
+        height: 64px;
+    }
+    button,
+    input[type='submit'],
+    input[type='reset'] {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+    button:hover {
+        filter: brightness(150%);
+    }
+}
+
+footer {
+    padding: 15px;
+    vertical-align: middle;
+    text-decoration: none;
+    background: var(--bg);
+    border-top: 1px solid var(--light);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade {
+    animation: fadeIn 5s;
+}
+
+.poetry {
+    font-style: italic;
+    color: var(--yellow);
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
